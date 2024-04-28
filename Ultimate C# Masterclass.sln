@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.33026.149
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList", "TodoList\TodoList.csproj", "{23ECCD8C-97A0-4DFD-95F6-8E047A4A03C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList", "TodoList\TodoList.csproj", "{23ECCD8C-97A0-4DFD-95F6-8E047A4A03C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{1056AF1F-5E8E-40F6-AA2A-A187A437437D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator.csproj", "{1056AF1F-5E8E-40F6-AA2A-A187A437437D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRollGame", "DiceRollGame\DiceRollGame.csproj", "{1B475B49-2F04-4F84-AA78-7481AB01FBD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1056AF1F-5E8E-40F6-AA2A-A187A437437D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1056AF1F-5E8E-40F6-AA2A-A187A437437D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1056AF1F-5E8E-40F6-AA2A-A187A437437D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B475B49-2F04-4F84-AA78-7481AB01FBD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B475B49-2F04-4F84-AA78-7481AB01FBD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B475B49-2F04-4F84-AA78-7481AB01FBD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B475B49-2F04-4F84-AA78-7481AB01FBD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

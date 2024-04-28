@@ -11,9 +11,9 @@ int GetNumber()
 
 void GetOperation(int num1, int num2)
 {
-    bool _ = true;
+    bool loop = true;
     char input;
-    while (_)
+    while (loop)
     {
         input = char.ToUpper(Console.ReadKey().KeyChar);
         
@@ -21,15 +21,15 @@ void GetOperation(int num1, int num2)
         {
             case 'A':
                 Console.WriteLine($"\n{num1} + {num2} = {num1 + num2}");
-                _ = false;
+                loop = false;
                 break;
             case 'S':
                 Console.WriteLine($"\n{num1} - {num2} = {num1 - num2}");
-                _ = false;
+                loop = false;
                 break;
             case 'M':
                 Console.WriteLine($"\n{num1} ÷ {num2} = {num1 / num2}");
-                _ = false;
+                loop = false;
                 break;
             default:
                 Console.WriteLine("\nInvalid input. Please try again.\n");
