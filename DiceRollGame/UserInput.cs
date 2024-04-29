@@ -27,4 +27,10 @@ internal static class UserInput
         }
         return false;
     }
+
+    public static bool Check(int input, Die die)
+    {
+        if (input == die.LastRoll) { return true; }
+        return false;
+    }
 }

@@ -1,26 +1,20 @@
 ﻿
 
+using static DiceRollGame.Game;
+
 namespace DiceRollGame;
 
 internal class Program
 {
     static void Main(string[] args)
     {
-        int lives = 3;
-        Die.Roll();
-        Responder.Welcome();
+        Random random = new();
+        Die die = new Die(random);
+        Game game = new Game(die);
 
-        while (lives > 0)
-        {
-            bool isCorrect = Guess.Check(UserInput.Listen()); //this could be condensed into the if statement but readability suffers
-            if (isCorrect) { lives = -1; }
-            else 
-            {
-                lives--;
-                Responder.BadGuess();
-            }
-        }
-        Responder.Goodbye(lives);
+        GameOutcome result = game.Play();
+        Responder.Goodbye(result);
         Console.ReadLine();
     }
 }
+

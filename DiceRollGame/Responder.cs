@@ -1,6 +1,6 @@
 ﻿
-
 namespace DiceRollGame;
+
 
 internal static class Responder
 {
@@ -10,17 +10,12 @@ internal static class Responder
     
     public static void Listening() => Console.WriteLine("Enter number: ");
 
-    public static void Goodbye(int lives)
+    public static void Goodbye(Game.GameOutcome result)
     {
-        switch (lives)
-        {
-            case 0:
-                Console.WriteLine("You lose");
-                break;
-            case -1:
-                Console.WriteLine("You win");
-                break;
-        }
+        string message = result == Game.GameOutcome.Win 
+            ? "You win" : "You lose";
+
+        Console.WriteLine(message);
     }
 
     public static void BadGuess() => Console.WriteLine("Wrong Number");

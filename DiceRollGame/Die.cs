@@ -1,15 +1,22 @@
 ﻿
 namespace DiceRollGame;
 
-internal static class Die 
+public class Die 
 {
-    static readonly Random _randomiser = new();
-    public static int LastRoll { get; private set; }
+    readonly Random _randomiser;
+    const int _sides = 6;
 
-    public static int Roll()
+    public int LastRoll { get; private set; }
+
+    public int Roll()
     {
-        int face = _randomiser.Next(1, 7);
+        int face = _randomiser.Next(1, _sides + 1);
         LastRoll = face;
         return face;
+    }
+
+    public Die(Random random)
+    {
+        _randomiser = random;
     }
 }
